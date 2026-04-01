@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini SlashDB Demo</title>
+</head>
+<body>
+  <h1>Users</h1>
+  <button onclick="loadUsers()">Load Users</button>
+  <ul id="users"></ul>
+
+  <script>
+    async function loadUsers() {
+      const res = await fetch("http://localhost:8000/users");
+      const data = await res.json();
+      const list = document.getElementById("users");
+      list.innerHTML = "";
+      data.forEach(user => {
+        const li = document.createElement("li");
+        li.textContent = user.email;
+        list.appendChild(li);
+      });
+    }
+  </script>
+</body>
+</html>
