@@ -1,6 +1,6 @@
 # mini-slashdb
 
-A lightweight Python backend that exposes relational database resources through REST-style endpoints using FastAPI and SQLAlchemy.
+A lightweight Python backend that exposes relational database resources through REST-style endpoints using FastAPI and SQLAlchemy. This project also demonstrates how backend APIs integrate with frontend applications in a full-stack web architecture.
 
 ## Why this project exists
 
